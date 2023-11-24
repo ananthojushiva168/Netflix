@@ -1,0 +1,155 @@
+.third-main{
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    border-bottom: 8px solid #222;
+}
+.third-second{
+    display: none;
+    width: 570px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.third-main h1,p{
+    color: white;
+    font-size: 25px;
+}
+.third-main h1{
+    font-size: 50px;
+}
+.third-main img{
+    width: 505px;
+}
+.third-second{
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Boxshot{
+    height: 80px;
+    width: 57px;
+    display: flex;
+}
+.Boxshot img{
+    width: 100%;
+}
+.box-two h4{
+    color: white;
+}
+.box-two p{
+    font-size: 15px;
+    color: blue;
+}
+.box-two{
+    padding-right: 50px;
+}
+.gif{
+    width: 55px;
+    height: 60px;
+    display: flex;
+}
+.gifimg{
+    width: 100%;
+}
+.flex-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #000;
+    border: 2px solid #222;
+    width: 360px;
+    border-radius: 15px;
+    padding: 15px;
+    position: absolute;
+    bottom: 4%;
+    left: 14%;
+}
+
+.img-position{
+    position: relative;
+}
+@media (max-width: 1252px) {
+    .third-main h1{
+        font-size: 40px;
+    }
+}
+@media (max-width: 1000px) {
+    .third-main{
+        flex-direction: column-reverse;
+    }
+    
+    .third-second{
+        display: flex;
+        width: 800px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .third-second{
+        width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .third-second{
+        width: 400px;
+    }
+    .third-main h1{
+        font-size: 30px;
+    }
+    .third-main p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 520px) {
+    .Strange-img{
+       width: 400px;
+    }
+    .Strange-img img{
+        width: 100%;
+    }
+    .flex-box{
+        left: 5%;
+    }
+    .third-main h1{
+        font-size: 20px;
+    }
+    .third-main p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 420px) {
+    .Strange-img{
+       width: 300px;
+    }
+    .Strange-img img{
+        width: 100%;
+    }
+    .flex-box{
+        left: 8%;
+        width: 250px;
+        padding: 5px;
+        height: 70px;
+    }
+    .Boxshot{
+        height: 52px;
+    }
+    .box-two{
+        padding: 0;
+        font-size: 13px;
+        width: 145px;
+    }
+    .box-two p{
+        font-size: 10px;
+    }
+    .third-second{
+        width: 290px;
+    }
+}

@@ -1,0 +1,93 @@
+.Fourth-main{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    padding: 80px 20px;
+    border-bottom: 8px solid #222;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.Fourth-main h1{
+    color: white;
+    font-size: 50px;
+}
+.para{
+    color: white;
+}
+.Fourth-main div:first-child{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Fourth-box{
+    position: relative;
+}
+.Fourth-box video{
+    width: 310px;
+    position: absolute;
+    top: 11.5%;
+    left: 19%;
+}
+
+@media (max-width:1000px) {
+    .Fourth-main{
+        flex-direction: column;
+    }
+    #fourth-co{
+        width: 800px;
+        text-align: center;
+    }
+}
+
+@media (max-width:800px) {
+    #fourth-co{
+        width: 600px;
+        text-align: center;
+    }
+    .Fourth-main{
+    padding: 40px 20px;
+    gap: 20px;
+    }
+}
+@media (max-width:600px) {
+    #fourth-co{
+        width: 500px;
+        text-align: center;
+    }
+    .Fourth-main h1{
+        font-size: 30px;
+    }
+    .para{
+        font-size: 15px;
+    }
+}
+@media (max-width:520px) {
+    #fourth-co{
+        width: 400px;
+        text-align: center;
+    }
+    .Fourth-main div:first-child{
+        width: 400px;
+    }
+    .Fourth-box video{
+        width: 243px;
+    }
+}
+
+@media (max-width:420px) {
+    #fourth-co{
+        width: 300px;
+    }
+    .Fourth-main div:first-child{
+        width: 300px;
+    }
+    .Fourth-box video{
+        width: 183px;
+    }
+    .Fourth-main{
+       padding: 20px;
+       gap: 20px;
+    }
+}

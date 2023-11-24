@@ -1,0 +1,261 @@
+.main-hero{
+    background-color: #000;
+    position: relative;
+    border-bottom: 8px solid #222;
+}
+
+.hero-background-img{
+    background-size: cover;
+    height:100vh;
+    width: 100%;
+    background-image: url(../components/images/netback.jpg);
+    opacity: 0.9;
+    /* box-shadow: inset 54px 91px 243px #000; */
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    box-shadow: 0px 0px 100px 68px #000 inset;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.5;
+}
+nav{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    height: 10vh;
+    align-items: center;
+    padding: 3% 6%;
+    justify-content: space-between;
+}
+nav div:first-child{
+    width: 10.375rem;
+    height:10.25rem;
+}
+nav div:nth-child(2){
+    display: flex;
+    gap: 30px;
+}
+nav img {
+ width: 100%;
+}
+
+nav select{
+    background: transparent;
+    color: white;
+    height: 38px;
+    padding: 0 5px;
+    border-radius: 2px;
+}
+nav select option{
+    background-color: black;
+}
+
+nav button{
+    padding: 0 15px;
+    border-radius: 2px;
+    border: 2px solid red;
+    background-color: red;
+    color: white;
+}
+ 
+.hero-text-box{
+    padding-top: 15%;
+    color: white;
+    position: absolute;
+    top: 2.5%;
+    width: 100%;
+    text-align: center;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.hero-text-box div:first-child {
+    margin: 0 auto;
+    width: 700px;
+}
+.hero-text-box h1{
+    font-size: 60px;
+    font-weight: bolder;
+}
+.hero-text-box h2{
+    font-size: 30px;
+    padding-bottom: 25px;
+    font-weight: lighter;
+}
+
+.hero-text-box h3{
+    font-size: 20px;
+    padding-bottom: 15px;
+    font-weight: lighter;
+}
+.hero-text-box input{
+    height: 70px;
+    width: 500px;
+    padding-left: 5px;
+    font-size: 18px;
+}
+.hero-text-box .btn{
+    height: 70px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border: 2px solid red;
+    font-size: 1.625rem;
+}
+.email-field{
+    display: flex;
+}
+.email-head{
+    position: relative;
+}
+#label{
+    position: absolute;
+    top: 28%;
+    left: 1%;
+    transition: top 0.2s;
+    color:#8c8c8c
+}
+#labeltrue{
+    position: absolute;
+    top: 0;
+    left: 1%;
+    transition: top 0.2s;
+    color:#8c8c8c;
+}
+input:focus{
+    outline: none;
+}
+.svg{
+    padding-top: 3%;
+    font-size: 27px;
+    font-weight: lighter;
+}
+
+@media(max-width:800px) {
+    
+    .hero-text-box h1{
+        font-size: 40px;
+    }   
+    .hero-text-box div:first-child {
+        width: 600px;
+    }
+    .email-field{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    #label {
+        top: 15%;
+        left: 10%;
+    }
+    #labeltrue{
+        left: 10%;
+    }
+    nav{
+        padding-top: 6%;
+    }
+    .hero-text-box{
+        padding-top: 22%;
+    }
+}
+@media (max-width:700px) {
+    .hero-text-box div:first-child {
+        width: 500px;
+    }
+    #label{
+        left: 2%;
+    }
+    #labeltrue{
+        left: 1%;
+    }
+    
+}
+@media (max-width:600px) {
+    .hero-text-box div:first-child {
+        width: 400px;
+    }
+    .hero-text-box input{
+        width: 400px;
+    }
+    #label {
+        top: 15%;
+        left: 3%;
+    }
+    #labeltrue{
+        left: 2%;
+    }
+}
+
+@media (max-width:500px) {
+    .hero-text-box h1{
+        font-size: 30px;
+    }
+    .hero-text-box h2{
+        font-size: 20px;
+    }
+    .hero-text-box{
+        padding-top: 30%;
+    }
+    nav div:first-child{
+        width: 5.375rem;
+        height:5.25rem;
+    }
+    .hero-background-img{
+        flex-wrap: wrap;
+    }
+    .hero-text-box input{
+        width: 300px;
+        height: 50px;
+    }
+    #label {
+        top: 10%;
+        left: 15%;
+    }
+    #labeltrue{
+        top: -3px;
+        left: 14%;
+    }
+    .hero-text-box .btn{
+        height: 40px;
+        width: 200px;
+    }
+    .hero-text-box div:first-child {
+        width: 400px;
+    }
+    
+}
+@media (max-width:420px) {
+    .hero-text-box h1{
+        font-size: 20px;
+    }
+    .hero-text-box h2{
+        font-size: 15px;
+    }
+    .hero-text-box h3{
+        font-size: 8px;
+    }
+    .hero-text-box div:first-child {
+        width: 300px;
+    }
+    .hero-text-box input{
+        width: 280px;
+    }
+    .hero-text-box .btn{
+        height: 30px;
+        width: 100px;
+        font-size: 10px;
+    }
+    .svg{
+        font-size: 11px;
+        padding-top: 2%;
+    }
+    nav button{
+        width: 56px;
+        padding: 0;
+    }
+    .hero-background-img{
+        height: 70vh;
+    }
+}

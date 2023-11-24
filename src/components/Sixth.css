@@ -1,0 +1,217 @@
+.sixth-mainbox{
+    background-color: #000;
+    border-bottom: 8px solid #222;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.sixth-main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.heading-sixth{
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+.sixth-child-box{
+    display: flex;
+    width: 800px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-weight: lighter;
+}
+.sixth-child-box2{
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #303030;
+}
+
+.sixth-child-box2 h1{
+    font-weight: normal;
+}
+.sixth-btn{
+    display: flex;
+    align-items: center;
+    padding-bottom: 9px;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s;
+    font-weight: normal;
+    font-size:12px;
+  }  
+
+.content.show{
+    min-height: 200px;
+    max-height: 700px;
+    background-color: #303030;
+    padding: 20px 20px;
+    font-size: 2rem;
+}
+.arrow{
+    font-size: 40px;
+    transition: all 0.2s;
+}
+#email-field{
+    display: flex;
+}
+#email-head{
+    position: relative;
+}
+.label{
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    transition: top 0.2s;
+    color:#8c8c8c
+}
+.labeltrue{
+    position: absolute;
+    top: 0;
+    left: 1%;
+    transition: top 0.2s;
+    color:#8c8c8c;
+}
+input:focus{
+    outline: none;
+}
+#email-head input{
+    height: 70px;
+    width: 600px;
+    padding-left: 5px;
+    font-size: 18px;
+}
+.btn{
+    height: 70px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border: 2px solid red;
+}
+
+.sixth-main-p{
+    font-size: 20px;
+}
+
+@media (max-width:900px) {
+    .accordion{
+        width: 600px;
+    }
+    .sixth-child-box{
+        width: 600px;
+    }
+    .sixth-child-box2{
+        width: 600px;
+    }
+   #email-field input{
+        width: 500px;
+    }
+}
+
+@media (max-width:676px) {
+    .accordion{
+        width: 500px;
+    }
+    .sixth-child-box{
+        width: 500px;
+    }
+    .sixth-child-box2{
+        width: 500px;
+    }
+    #email-field input{
+        width: 400px;
+    }
+    .content.show{
+    font-size: 1.5rem;
+    }
+}
+
+@media (max-width:570px) {
+    .accordion{
+        width: 400px;
+    }
+    .sixth-child-box{
+        width: 400px;
+    }
+    .sixth-child-box2{
+        width: 400px;
+    }
+    #email-field input{
+        width: 300px;
+    }
+    .content.show{
+    font-size: 1.5rem;
+    }
+    .sixth-child-box2 h1{
+      font-size: 20px;
+    }
+}
+
+@media (max-width:470px) {
+    .accordion{
+        width: 300px;
+    }
+    .sixth-child-box{
+        width: 300px;
+    }
+    .sixth-child-box2{
+        width: 300px;
+    }
+    #email-field input{
+        width: 200px;
+    }
+    .content.show{
+    font-size: 1.5rem;
+    }
+    .sixth-child-box2 h1{
+      font-size: 20px;
+    }
+    #btn{
+      width: 80px;
+      font-size: 10px;
+    }
+}
+
+@media (max-width:320px) {
+    .accordion{
+        width: 280px;
+    }
+    .sixth-child-box{
+        width: 280px;
+    }
+    .sixth-child-box2{
+        width: 280px;
+    }
+    #email-field input{
+        width: 200px;
+    }
+    .content.show{
+    font-size: 1.5rem;
+    }
+    .sixth-child-box2 h1{
+      font-size: 20px;
+    }
+    #btn{
+      width: 80px;
+      font-size: 10px;
+    }
+}
